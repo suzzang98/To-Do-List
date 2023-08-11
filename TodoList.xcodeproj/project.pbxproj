@@ -14,6 +14,10 @@
 		1D7A70A92A820C300043167E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D7A70A82A820C300043167E /* Assets.xcassets */; };
 		1D7A70AC2A820C300043167E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D7A70AA2A820C300043167E /* LaunchScreen.storyboard */; };
 		1D7A70B42A82121A0043167E /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7A70B32A82121A0043167E /* CustomCell.swift */; };
+		1DC381202A8488D700964D70 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC3811F2A8488D700964D70 /* ViewController2.swift */; };
+		1DC381652A85CA9200964D70 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC381642A85CA9200964D70 /* Task.swift */; };
+		1DC381672A85CB8C00964D70 /* TaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC381662A85CB8C00964D70 /* TaskList.swift */; };
+		1DC381692A85E0EC00964D70 /* CustomCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC381682A85E0EC00964D70 /* CustomCell2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		1D7A70AB2A820C300043167E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D7A70AD2A820C300043167E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D7A70B32A82121A0043167E /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		1DC3811F2A8488D700964D70 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		1DC381642A85CA9200964D70 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		1DC381662A85CB8C00964D70 /* TaskList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskList.swift; sourceTree = "<group>"; };
+		1DC381682A85E0EC00964D70 /* CustomCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +66,36 @@
 		1D7A709E2A820C2F0043167E /* TodoList */ = {
 			isa = PBXGroup;
 			children = (
+				1DC3816A2A85E0F500964D70 /* Cells */,
+				1DC381632A85CA7D00964D70 /* Model */,
 				1D7A709F2A820C2F0043167E /* AppDelegate.swift */,
 				1D7A70A12A820C2F0043167E /* SceneDelegate.swift */,
 				1D7A70A32A820C2F0043167E /* ViewController.swift */,
-				1D7A70B32A82121A0043167E /* CustomCell.swift */,
+				1DC3811F2A8488D700964D70 /* ViewController2.swift */,
 				1D7A70A52A820C2F0043167E /* Main.storyboard */,
 				1D7A70A82A820C300043167E /* Assets.xcassets */,
 				1D7A70AA2A820C300043167E /* LaunchScreen.storyboard */,
 				1D7A70AD2A820C300043167E /* Info.plist */,
 			);
 			path = TodoList;
+			sourceTree = "<group>";
+		};
+		1DC381632A85CA7D00964D70 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1DC381642A85CA9200964D70 /* Task.swift */,
+				1DC381662A85CB8C00964D70 /* TaskList.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1DC3816A2A85E0F500964D70 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1D7A70B32A82121A0043167E /* CustomCell.swift */,
+				1DC381682A85E0EC00964D70 /* CustomCell2.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +169,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DC381672A85CB8C00964D70 /* TaskList.swift in Sources */,
+				1DC381692A85E0EC00964D70 /* CustomCell2.swift in Sources */,
+				1DC381202A8488D700964D70 /* ViewController2.swift in Sources */,
 				1D7A70A42A820C2F0043167E /* ViewController.swift in Sources */,
 				1D7A70A02A820C2F0043167E /* AppDelegate.swift in Sources */,
 				1D7A70B42A82121A0043167E /* CustomCell.swift in Sources */,
+				1DC381652A85CA9200964D70 /* Task.swift in Sources */,
 				1D7A70A22A820C2F0043167E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
