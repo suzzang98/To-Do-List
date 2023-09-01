@@ -7,11 +7,11 @@
 
 import UIKit
 
-class CustomCell: UITableViewCell {
+class ToDoTableViewCell: UITableViewCell {
 
     var task: Task?
 
-    @IBOutlet weak var button_custom: UIButton!
+    @IBOutlet weak var taskSwitch: UISwitch!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -23,10 +23,9 @@ class CustomCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
-
-    @IBAction func checkButt(_ sender: UIButton) {
+    @IBAction func switchChanged(_ sender: UISwitch) {
         guard let task else{return}
-        if task.isCompleted == false{
+        if taskSwitch.isOn{
             textLabel?.text = nil
             textLabel?.attributedText = task.title.strikeThrough()
             TaskList.completeTask(task: task, isCompleted: true)
@@ -36,7 +35,9 @@ class CustomCell: UITableViewCell {
             TaskList.completeTask(task: task, isCompleted: false)
         }
         print(TaskList.completeList())
+
     }
+    
     
     func setTask(_ _task: Task){
         task = _task
@@ -44,12 +45,14 @@ class CustomCell: UITableViewCell {
         if task.isCompleted {
             textLabel?.text = nil
             textLabel?.attributedText = task.title.strikeThrough()
+            
         } else {
             textLabel?.attributedText = nil
             textLabel?.text = task.title
             
         }
-    }
+        TaskList.completeTask(task: task, isCompleted: false)
+            }
     
 
     
